@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for FILE in "$1"; do
+for FILE in "$@"; do
 if [[ -f $FILE ]]; then
 countlin=$(wc -l < "$FILE")
 
